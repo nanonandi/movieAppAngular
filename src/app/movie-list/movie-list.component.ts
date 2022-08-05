@@ -3,7 +3,7 @@ import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 @Component({
   selector: 'movie-list',
   templateUrl: './movie-list.component.html',
-  styleUrls: ['./movie-list.component.css'],
+  styleUrls: ['./movie-list.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
 export class MovieListComponent implements OnInit {
@@ -21,7 +21,7 @@ export class MovieListComponent implements OnInit {
 
   }
 
-  sort(para){
+  sort(para: any){
       const movies = this.movies;
       let titleOrder = this.titleOrder;
       let yearOrder =  this.yearOrder;
